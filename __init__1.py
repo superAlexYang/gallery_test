@@ -59,6 +59,6 @@ def get_gallery():
     print(image_names)
     return render_template("gallery.html", image_names=image_names)
 
-
-if __name__ == "__main__":
-    app.run(port=4555, debug=True)
+if __name__ == '__main__':
+	app.debug = True
+	app.run(host = 'localhost', port = 5000)
